@@ -1,0 +1,15 @@
+
+.times {
+    display: flex;
+    gap: 4px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.time {
+    padding: 2px 12px;
+    background: #d9e8ff;
+    border-radius: 11px;
+    cursor: pointer;
+    color: #343434;
+}

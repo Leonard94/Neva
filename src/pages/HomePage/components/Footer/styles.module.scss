@@ -1,0 +1,13 @@
+.footer {
+    padding: 50px 0;
+    background: black;
+    text-align: center;
+
+    a {
+        color: #fff;
+
+        &:hover {
+            color: yellow;
+        }
+    }
+}

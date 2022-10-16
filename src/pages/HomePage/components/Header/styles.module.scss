@@ -1,0 +1,114 @@
+@import '../../../../scss/typography.scss';
+
+.top {
+    background: #fff;
+    padding: 15px 0;
+
+    &_inner {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.slogan {
+    @include customizeText(15px, 140%);
+    color: #777777;
+
+    @media (max-width: 870px) {
+        display: none;
+    }
+}
+
+.logo {
+    max-width: 200px;
+
+    img {
+        max-width: 100%;
+    }
+}
+
+.bottom {
+    background: #272d30;
+    position: relative;
+}
+
+.menu {
+    @media (max-width: 990px) {
+        display: none;
+    }
+
+    li {
+        display: inline-block;
+    }
+
+    a {
+        @include text();
+        color: #fff;
+
+        position: relative;
+        display: inline-block;
+        padding: 12px 32px;
+
+        &:after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+
+            width: 1px;
+            height: 50%;
+            background: #fff;
+        }
+
+        &:hover {
+            background: #2c6590;
+
+            &:after {
+                width: 0;
+            }
+        }
+    }
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.social {
+    display: flex;
+    gap: 10px;
+
+    a {
+        transition: all 0.3s ease;
+        
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+.contacts {
+    @include base();
+
+    a {
+        color: #49aada;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    @media (max-width: 520px) {
+        display: none;
+    }
+}

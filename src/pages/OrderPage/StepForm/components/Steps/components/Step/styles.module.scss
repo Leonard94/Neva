@@ -1,0 +1,12 @@
+@import '../../../../../../../scss/typography.scss';
+
+.title {
+    @include customizeText(20px, 140%);
+
+    text-align: center;
+    margin: 25px 0;
+}
+
+.content {
+    margin: 50px 0;
+}

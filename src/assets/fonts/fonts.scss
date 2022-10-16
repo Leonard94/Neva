@@ -1,0 +1,45 @@
+@font-face {
+    font-family: "OpenSans";
+    src:
+        local("OpenSans-Regular"),
+        local("OpenSans-regular"),
+        local("OpenSans Regular"),
+        local("OpenSans regular"),
+        url("../fonts/OpenSans/OpenSans-Regular.woff2") format("woff2"),
+        url("../fonts/OpenSans/OpenSans-Regular.woff") format("woff"),
+        url("../fonts/OpenSans/OpenSans-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src:
+        local("OpenSans-SemiBold"),
+        local("OpenSans-semibold"),
+        local("OpenSans SemiBold"),
+        local("OpenSans semibold"),
+        url("../fonts/OpenSans/OpenSans-SemiBold.woff2") format("woff2"),
+        url("../fonts/OpenSans/OpenSans-SemiBold.woff") format("woff"),
+        url("../fonts/OpenSans/OpenSans-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src:
+        local("OpenSans-Bold"),
+        local("OpenSans-bold"),
+        local("OpenSans Bold"),
+        local("OpenSans bold"),
+        url("../fonts/OpenSans/OpenSans-Bold.woff2") format("woff2"),
+        url("../fonts/OpenSans/OpenSans-Bold.woff") format("woff"),
+        url("../fonts/OpenSans/OpenSans-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+

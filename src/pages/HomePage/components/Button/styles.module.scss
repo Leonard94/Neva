@@ -1,0 +1,14 @@
+.btn {
+    span {
+        padding: 12px 44px;
+        background: #FED74B;
+        border: 1px solid #CBA500;
+        border-radius: 20px;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background: #e8b705;
+            border-color: #e8b705;
+        }
+    }
+}

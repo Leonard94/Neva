@@ -1,0 +1,36 @@
+@import '../../../../../../scss/typography.scss';
+@import '../../../../../../scss/variables.scss';
+@import '../../../../../../scss/mixins.scss';
+
+.btn {
+    @include customizeText(14px, 100%);
+    color: $text-second;
+
+    padding: 7px 25px;
+    transition: all 0.3s ease;
+    background: inherit;
+
+    border: 1px solid inherit;
+    border-radius: 17px;
+
+    &:hover {
+        color: $text-main;
+    }
+
+    &:active {
+        transform: scale(0.95);
+    }
+
+    &:disabled {
+        color: $bg-main;
+        cursor: default;
+    }
+
+    &_fill {
+        color: #fff !important;
+        background: $color-accent;
+        border-color: $color-accent;
+
+        @include btn-hover();
+    }
+}

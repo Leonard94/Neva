@@ -1,0 +1,46 @@
+@import '../../../../../../../scss/variables.scss';
+@import '../../../../../../../scss/typography.scss';
+@import '../../../../../../../scss/mixins.scss';
+
+.counter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+.btn {
+    width: 32px;
+    height: 32px;
+    background: inherit;
+    transition: all 0.3s ease;
+
+    @include h3();
+    color: $color-accent;
+
+    border-radius: 6px;
+    border: 1px solid $color-accent;
+
+    &:hover {
+        border-color: #1a83bf;
+    }
+
+    &:active {
+        transform: scale(0.9);
+    }
+
+    &:disabled {
+        color: $text-second;
+        border-color: $text-second;
+
+        &:active {
+            transform: scale(1);
+        }
+    }
+}
+
+.value {
+    @include h1();
+    color: $text-main;
+}

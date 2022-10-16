@@ -1,0 +1,35 @@
+@mixin base {
+    font-family: 'OpenSans';
+    font-style: normal;
+}
+
+@mixin h1 {
+    font-size: 28px;
+    line-height: 22px;
+    font-weight: 600;
+}
+
+@mixin h3 {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 600;
+}
+
+@mixin text() {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+@mixin inputText() {
+    @include base();
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 120%;
+}
+
+@mixin customizeText($fz, $lh) {
+    font-size: $fz;
+    font-weight: 400;
+    line-height: $lh;
+}

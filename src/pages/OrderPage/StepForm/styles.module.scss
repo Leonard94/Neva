@@ -1,0 +1,18 @@
+@import '../../../scss/variables.scss';
+
+.form {
+    position: relative;
+    top: -50px;
+}
+
+.body {
+    padding: 45px 100px;
+    border-radius: 29px;
+
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.1);
+    background: $bg-main;
+
+    @media (max-width: 700px) {
+        padding: 45px 50px;
+    }
+}

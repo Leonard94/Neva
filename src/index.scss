@@ -1,0 +1,17 @@
+@import './scss/reset.scss';
+@import './assets/fonts/fonts.scss';
+
+body {
+    font-family: 'OpenSans';
+}
+
+.container {
+    max-width: 1104px;
+    margin: 0 auto;
+    padding: 0 17px;
+}
+
+.container-small {
+    max-width: 660px;
+    margin: 0 auto;
+}
