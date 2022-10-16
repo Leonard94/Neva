@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom'
 
 export const Times = ({ times }) => {
     const [isOpen, setIsOpen] = useState(false)
-    const [width, setWidth] = useState(0)
-    const [timeRowItems, setTimeRowItems] = useState(0)
+    const [width, setWidth] = useState(window.innerWidth)
+    const [timeRowItems, setTimeRowItems] = useState(1)
 
     const elementsInRow = () => {
         if (width < 360) {
@@ -42,10 +42,8 @@ export const Times = ({ times }) => {
     }
 
     useEffect(() => {
-        if (times.length > 3) {
-            window.addEventListener('resize', handleResize)
-            elementsInRow()
-        }
+        elementsInRow()
+        window.addEventListener('resize', handleResize)
 
         return () => {
             window.removeEventListener('resize', handleResize)
